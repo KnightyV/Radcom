@@ -13,7 +13,7 @@ class BaseScreen(QWidget):
         self.setStyleSheet("background-color: #53535e; border-radius: 15px;")  # Agregar bordes redondeados
 
         # Crear layout principal
-        main_layout = QVBoxLayout()
+        self.main_layout = QVBoxLayout()
 
         # Crear barra de título personalizada
         self.title_bar = QWidget()
@@ -48,11 +48,18 @@ class BaseScreen(QWidget):
         self.title_bar.setLayout(title_layout)
 
         # Añadir la barra de título personalizada al layout principal
-        main_layout.addWidget(self.title_bar)
-        main_layout.addStretch(1)  # Esto empuja el contenido hacia abajo
+        self.main_layout.addWidget(self.title_bar)
+
+        # Crear un contenedor para el contenido (pantallas)
+        self.content_area = QWidget()
+        self.content_layout = QVBoxLayout()
+        self.content_area.setLayout(self.content_layout)
+        
+        # Añadir el contenedor de contenido al layout principal
+        self.main_layout.addWidget(self.content_area)
 
         # Establecer el layout principal
-        self.setLayout(main_layout)
+        self.setLayout(self.main_layout)
 
         # Título de la pantalla
         self.setWindowTitle(title)
