@@ -433,6 +433,7 @@ class Ui_Form(object):
 "QComboBox::down-arrow {\n"
 "    image: url(:/qt-project.org/styles/commonstyle/images/arrow-down-16.png);  /* Restaura la flecha predeterminada */\n"
 "}")
+        self.Filtro.setCurrentText("")
         font = QtGui.QFont()
         font.setFamily("Montserrat")
         font.setPointSize(14)
@@ -789,7 +790,6 @@ class Ui_Form(object):
 "</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">Clientes</span></p></body></html>"))
         self.lineEdit.setPlaceholderText(_translate("Form", "Buscar"))
-        self.Filtro.setCurrentText(_translate("Form", "Municipio"))
         self.menuOption1.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

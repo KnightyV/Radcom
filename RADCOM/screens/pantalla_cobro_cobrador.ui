@@ -906,7 +906,7 @@ QComboBox::down-arrow {
 }</string>
     </property>
     <property name="currentText">
-     <string>Municipio</string>
+     <string/>
     </property>
     <property name="currentFont">
      <font>

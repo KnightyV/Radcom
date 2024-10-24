@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'screens/pantalla_adeudo_admin.ui'
+# Form implementation generated from reading ui file 'screens/pantalla_historial_antena.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -17,11 +17,6 @@ class Ui_Form(object):
         Form.setWindowModality(QtCore.Qt.NonModal)
         Form.setEnabled(True)
         Form.resize(1275, 725)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
-        Form.setSizePolicy(sizePolicy)
         Form.setMinimumSize(QtCore.QSize(1275, 725))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
@@ -72,91 +67,8 @@ class Ui_Form(object):
         self.frame_white_grey.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_white_grey.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_white_grey.setObjectName("frame_white_grey")
-        self.EfectivoOption = QtWidgets.QRadioButton(self.frame_white_grey)
-        self.EfectivoOption.setGeometry(QtCore.QRect(60, 470, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(12)
-        self.EfectivoOption.setFont(font)
-        self.EfectivoOption.setStyleSheet("QRadioButton{\n"
-" background: transparent; \n"
-"color: #FFFFFF;\n"
-"}")
-        self.EfectivoOption.setObjectName("EfectivoOption")
-        self.DeptTransfOption = QtWidgets.QRadioButton(self.frame_white_grey)
-        self.DeptTransfOption.setGeometry(QtCore.QRect(60, 510, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(12)
-        self.DeptTransfOption.setFont(font)
-        self.DeptTransfOption.setStyleSheet("QRadioButton{\n"
-" background: transparent; \n"
-"color: #FFFFFF;\n"
-"}")
-        self.DeptTransfOption.setObjectName("DeptTransfOption")
-        self.GuardarButton = QtWidgets.QPushButton(self.frame_white_grey)
-        self.GuardarButton.setGeometry(QtCore.QRect(440, 660, 131, 31))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(13)
-        font.setBold(True)
-        font.setWeight(75)
-        self.GuardarButton.setFont(font)
-        self.GuardarButton.setStyleSheet("QPushButton{\n"
-"        background: #FFFFFF; \n"
-"         border-radius: 15px; \n"
-"}")
-        self.GuardarButton.setObjectName("GuardarButton")
-        self.MetodoHolder = QtWidgets.QLineEdit(self.frame_white_grey)
-        self.MetodoHolder.setGeometry(QtCore.QRect(60, 560, 521, 41))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(18)
-        self.MetodoHolder.setFont(font)
-        self.MetodoHolder.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.MetodoHolder.setStyleSheet("QLineEdit{\n"
-"    border: 1px solid  #37373d;\n"
-"        background: #FFFFFF; \n"
-"         border-radius: 20px; \n"
-"}")
-        self.MetodoHolder.setInputMask("")
-        self.MetodoHolder.setAlignment(QtCore.Qt.AlignCenter)
-        self.MetodoHolder.setPlaceholderText("")
-        self.MetodoHolder.setObjectName("MetodoHolder")
-        self.AbonarButton = QtWidgets.QPushButton(self.frame_white_grey)
-        self.AbonarButton.setGeometry(QtCore.QRect(240, 660, 151, 31))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(13)
-        font.setBold(True)
-        font.setWeight(75)
-        self.AbonarButton.setFont(font)
-        self.AbonarButton.setStyleSheet("QPushButton{\n"
-"        background: #FFFFFF; \n"
-"         border-radius: 15px; \n"
-"}")
-        self.AbonarButton.setObjectName("AbonarButton")
-        self.MetodoPago = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.MetodoPago.setGeometry(QtCore.QRect(60, 420, 291, 41))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.MetodoPago.sizePolicy().hasHeightForWidth())
-        self.MetodoPago.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        self.MetodoPago.setFont(font)
-        self.MetodoPago.setToolTipDuration(-1)
-        self.MetodoPago.setAutoFillBackground(False)
-        self.MetodoPago.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.MetodoPago.setObjectName("MetodoPago")
         self.InfoPago = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.InfoPago.setGeometry(QtCore.QRect(60, 210, 371, 41))
+        self.InfoPago.setGeometry(QtCore.QRect(30, 100, 511, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -174,136 +86,8 @@ class Ui_Form(object):
 "    margin: 0;                /* Eliminar márgenes */\n"
 "}")
         self.InfoPago.setObjectName("InfoPago")
-        self.NumCuentaHolder = QtWidgets.QLineEdit(self.frame_white_grey)
-        self.NumCuentaHolder.setGeometry(QtCore.QRect(60, 280, 521, 41))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(18)
-        self.NumCuentaHolder.setFont(font)
-        self.NumCuentaHolder.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.NumCuentaHolder.setStyleSheet("QLineEdit{\n"
-"    border: 1px solid  #37373d;\n"
-"        background: #FFFFFF; \n"
-"         border-radius: 20px; \n"
-"}")
-        self.NumCuentaHolder.setInputMask("")
-        self.NumCuentaHolder.setAlignment(QtCore.Qt.AlignCenter)
-        self.NumCuentaHolder.setPlaceholderText("")
-        self.NumCuentaHolder.setObjectName("NumCuentaHolder")
-        self.NumCuenta = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.NumCuenta.setGeometry(QtCore.QRect(60, 250, 291, 41))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.NumCuenta.sizePolicy().hasHeightForWidth())
-        self.NumCuenta.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.NumCuenta.setFont(font)
-        self.NumCuenta.setToolTipDuration(-1)
-        self.NumCuenta.setAutoFillBackground(False)
-        self.NumCuenta.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.NumCuenta.setObjectName("NumCuenta")
-        self.FolioHolder = QtWidgets.QLineEdit(self.frame_white_grey)
-        self.FolioHolder.setGeometry(QtCore.QRect(60, 360, 231, 41))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(18)
-        self.FolioHolder.setFont(font)
-        self.FolioHolder.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.FolioHolder.setStyleSheet("QLineEdit{\n"
-"    border: 1px solid  #37373d;\n"
-"        background: #FFFFFF; \n"
-"         border-radius: 20px; \n"
-"}")
-        self.FolioHolder.setInputMask("")
-        self.FolioHolder.setAlignment(QtCore.Qt.AlignCenter)
-        self.FolioHolder.setPlaceholderText("")
-        self.FolioHolder.setObjectName("FolioHolder")
-        self.Folio = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.Folio.setGeometry(QtCore.QRect(60, 330, 201, 41))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.Folio.sizePolicy().hasHeightForWidth())
-        self.Folio.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.Folio.setFont(font)
-        self.Folio.setToolTipDuration(-1)
-        self.Folio.setAutoFillBackground(False)
-        self.Folio.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.Folio.setObjectName("Folio")
-        self.MontoText_2 = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.MontoText_2.setGeometry(QtCore.QRect(350, 330, 201, 41))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.MontoText_2.sizePolicy().hasHeightForWidth())
-        self.MontoText_2.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.MontoText_2.setFont(font)
-        self.MontoText_2.setToolTipDuration(-1)
-        self.MontoText_2.setAutoFillBackground(False)
-        self.MontoText_2.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.MontoText_2.setObjectName("MontoText_2")
-        self.MontoHolder = QtWidgets.QLineEdit(self.frame_white_grey)
-        self.MontoHolder.setGeometry(QtCore.QRect(350, 360, 231, 41))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(18)
-        self.MontoHolder.setFont(font)
-        self.MontoHolder.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.MontoHolder.setStyleSheet("QLineEdit{\n"
-"    border: 1px solid  #37373d;\n"
-"        background: #FFFFFF; \n"
-"         border-radius: 20px; \n"
-"}")
-        self.MontoHolder.setInputMask("")
-        self.MontoHolder.setAlignment(QtCore.Qt.AlignCenter)
-        self.MontoHolder.setPlaceholderText("")
-        self.MontoHolder.setObjectName("MontoHolder")
-        self.Adeudo = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.Adeudo.setGeometry(QtCore.QRect(60, 150, 181, 41))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.Adeudo.sizePolicy().hasHeightForWidth())
-        self.Adeudo.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.Adeudo.setFont(font)
-        self.Adeudo.setToolTipDuration(-1)
-        self.Adeudo.setAutoFillBackground(False)
-        self.Adeudo.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.Adeudo.setObjectName("Adeudo")
         self.MontoText = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.MontoText.setGeometry(QtCore.QRect(240, 170, 81, 41))
+        self.MontoText.setGeometry(QtCore.QRect(230, 590, 81, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -322,159 +106,58 @@ class Ui_Form(object):
 "    margin: 0;                /* Eliminar márgenes */\n"
 "}")
         self.MontoText.setObjectName("MontoText")
-        self.Adeudo_2 = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.Adeudo_2.setGeometry(QtCore.QRect(60, 70, 331, 61))
+        self.Adeudo = QtWidgets.QTextBrowser(self.frame_white_grey)
+        self.Adeudo.setGeometry(QtCore.QRect(50, 570, 181, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.Adeudo_2.sizePolicy().hasHeightForWidth())
-        self.Adeudo_2.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.Adeudo.sizePolicy().hasHeightForWidth())
+        self.Adeudo.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Montserrat")
         font.setPointSize(5)
-        font.setBold(False)
-        font.setWeight(50)
-        self.Adeudo_2.setFont(font)
-        self.Adeudo_2.setToolTipDuration(-1)
-        self.Adeudo_2.setAutoFillBackground(False)
-        self.Adeudo_2.setStyleSheet("QTextBrowser {\n"
+        self.Adeudo.setFont(font)
+        self.Adeudo.setToolTipDuration(-1)
+        self.Adeudo.setAutoFillBackground(False)
+        self.Adeudo.setStyleSheet("QTextBrowser {\n"
 "    background: transparent;  /* Quitar el fondo */\n"
 "    color:#FFFFFF;\n"
 "    border: none;             /* Quitar el borde */\n"
 "    margin: 0;                /* Eliminar márgenes */\n"
 "}")
-        self.Adeudo_2.setObjectName("Adeudo_2")
-        self.IpText = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.IpText.setGeometry(QtCore.QRect(420, 120, 31, 31))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.IpText.sizePolicy().hasHeightForWidth())
-        self.IpText.setSizePolicy(sizePolicy)
+        self.Adeudo.setObjectName("Adeudo")
+        self.GuardarButton = QtWidgets.QPushButton(self.frame_white_grey)
+        self.GuardarButton.setGeometry(QtCore.QRect(420, 660, 151, 41))
         font = QtGui.QFont()
         font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.IpText.setFont(font)
-        self.IpText.setToolTipDuration(-1)
-        self.IpText.setAutoFillBackground(False)
-        self.IpText.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.IpText.setObjectName("IpText")
-        self.TELText = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.TELText.setGeometry(QtCore.QRect(420, 150, 61, 31))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.TELText.sizePolicy().hasHeightForWidth())
-        self.TELText.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.TELText.setFont(font)
-        self.TELText.setToolTipDuration(-1)
-        self.TELText.setAutoFillBackground(False)
-        self.TELText.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.TELText.setObjectName("TELText")
-        self.TelHolder = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.TelHolder.setGeometry(QtCore.QRect(470, 150, 111, 31))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.TelHolder.sizePolicy().hasHeightForWidth())
-        self.TelHolder.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.TelHolder.setFont(font)
-        self.TelHolder.setToolTipDuration(-1)
-        self.TelHolder.setAutoFillBackground(False)
-        self.TelHolder.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.TelHolder.setObjectName("TelHolder")
-        self.IPHolder = QtWidgets.QTextBrowser(self.frame_white_grey)
-        self.IPHolder.setGeometry(QtCore.QRect(470, 120, 111, 31))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.IPHolder.sizePolicy().hasHeightForWidth())
-        self.IPHolder.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(5)
-        self.IPHolder.setFont(font)
-        self.IPHolder.setToolTipDuration(-1)
-        self.IPHolder.setAutoFillBackground(False)
-        self.IPHolder.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#FFFFFF;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.IPHolder.setObjectName("IPHolder")
-        self.Clientes = QtWidgets.QTextBrowser(self.frame_white)
-        self.Clientes.setGeometry(QtCore.QRect(90, 70, 131, 41))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.Clientes.sizePolicy().hasHeightForWidth())
-        self.Clientes.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        self.Clientes.setFont(font)
-        self.Clientes.setToolTipDuration(-1)
-        self.Clientes.setAutoFillBackground(False)
-        self.Clientes.setStyleSheet("QTextBrowser {\n"
-"    background: transparent;  /* Quitar el fondo */\n"
-"    color:#37373d;\n"
-"    border: none;             /* Quitar el borde */\n"
-"    margin: 0;                /* Eliminar márgenes */\n"
-"}")
-        self.Clientes.setObjectName("Clientes")
-        self.listViewClients = QtWidgets.QListView(self.frame_white)
-        self.listViewClients.setGeometry(QtCore.QRect(40, 141, 221, 411))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(16)
-        self.listViewClients.setFont(font)
-        self.listViewClients.setObjectName("listViewClients")
-        self.lineEdit = QtWidgets.QLineEdit(self.frame_white)
-        self.lineEdit.setGeometry(QtCore.QRect(40, 660, 231, 41))
-        font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(18)
-        self.lineEdit.setFont(font)
-        self.lineEdit.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.lineEdit.setStyleSheet("QLineEdit{\n"
-"    border: 1px solid  #37373d;\n"
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.GuardarButton.setFont(font)
+        self.GuardarButton.setStyleSheet("QPushButton{\n"
 "        background: #FFFFFF; \n"
-"         border-radius: 20px; \n"
+"         border-radius: 15px; \n"
 "}")
-        self.lineEdit.setInputMask("")
-        self.lineEdit.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit.setObjectName("lineEdit")
-        self.Filtro = QtWidgets.QFontComboBox(self.frame_white)
-        self.Filtro.setGeometry(QtCore.QRect(50, 610, 221, 22))
+        self.GuardarButton.setObjectName("GuardarButton")
+        self.tableView = QtWidgets.QTableView(self.frame_white_grey)
+        self.tableView.setGeometry(QtCore.QRect(40, 250, 521, 291))
+        self.tableView.setStyleSheet("QTableView{\n"
+"    background: #FFFFFF;\n"
+"    border-radius: 20px; \n"
+"    color: #37373d;\n"
+"}")
+        self.tableView.setObjectName("tableView")
+        self.Filtro = QtWidgets.QFontComboBox(self.frame_white_grey)
+        self.Filtro.setGeometry(QtCore.QRect(270, 161, 311, 41))
         font = QtGui.QFont()
-        font.setFamily("Montserrat")
-        font.setPointSize(14)
+        font.setPointSize(-1)
         self.Filtro.setFont(font)
         self.Filtro.setStyleSheet("QFontComboBox{\n"
-"    border: 1px solid #37373d;\n"
+"    border: 1px solid #FFFFFF;\n"
 "    border-radius: 10px;\n"
 "    background: transparent;\n"
+"color: #FFFFFF;\n"
+"    font-size: 20px;\n"
 "}\n"
 "QComboBox::drop-down {\n"
 "    subcontrol-origin: padding;\n"
@@ -497,7 +180,6 @@ class Ui_Form(object):
 "QComboBox::down-arrow {\n"
 "    image: url(:/qt-project.org/styles/commonstyle/images/arrow-down-16.png);  /* Restaura la flecha predeterminada */\n"
 "}")
-        self.Filtro.setCurrentText("")
         font = QtGui.QFont()
         font.setFamily("Montserrat")
         font.setPointSize(14)
@@ -505,6 +187,175 @@ class Ui_Form(object):
         font.setWeight(50)
         self.Filtro.setCurrentFont(font)
         self.Filtro.setObjectName("Filtro")
+        self.cliente = QtWidgets.QLabel(self.frame_white)
+        self.cliente.setGeometry(QtCore.QRect(30, 60, 81, 81))
+        self.cliente.setText("")
+        self.cliente.setPixmap(QtGui.QPixmap("screens\\../assets/Profile.png"))
+        self.cliente.setScaledContents(True)
+        self.cliente.setObjectName("cliente")
+        self.comunidad = QtWidgets.QLabel(self.frame_white)
+        self.comunidad.setGeometry(QtCore.QRect(20, 210, 91, 61))
+        self.comunidad.setText("")
+        self.comunidad.setPixmap(QtGui.QPixmap("screens\\../assets/Comunidad.png"))
+        self.comunidad.setScaledContents(True)
+        self.comunidad.setObjectName("comunidad")
+        self.ClienteText = QtWidgets.QTextBrowser(self.frame_white)
+        self.ClienteText.setGeometry(QtCore.QRect(130, 80, 131, 41))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.ClienteText.sizePolicy().hasHeightForWidth())
+        self.ClienteText.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Montserrat")
+        self.ClienteText.setFont(font)
+        self.ClienteText.setToolTipDuration(-1)
+        self.ClienteText.setAutoFillBackground(False)
+        self.ClienteText.setStyleSheet("QTextBrowser {\n"
+"    background: transparent;  /* Quitar el fondo */\n"
+"    color:#37373d;\n"
+"    border: none;             /* Quitar el borde */\n"
+"    margin: 0;                /* Eliminar márgenes */\n"
+"}")
+        self.ClienteText.setObjectName("ClienteText")
+        self.ComunidadText = QtWidgets.QTextBrowser(self.frame_white)
+        self.ComunidadText.setGeometry(QtCore.QRect(130, 220, 161, 51))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.ComunidadText.sizePolicy().hasHeightForWidth())
+        self.ComunidadText.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Montserrat")
+        self.ComunidadText.setFont(font)
+        self.ComunidadText.setToolTipDuration(-1)
+        self.ComunidadText.setAutoFillBackground(False)
+        self.ComunidadText.setStyleSheet("QTextBrowser {\n"
+"    background: transparent;  /* Quitar el fondo */\n"
+"    color:#37373d;\n"
+"    border: none;             /* Quitar el borde */\n"
+"    margin: 0;                /* Eliminar márgenes */\n"
+"}")
+        self.ComunidadText.setObjectName("ComunidadText")
+        self.frame_10 = QtWidgets.QFrame(self.frame_white)
+        self.frame_10.setGeometry(QtCore.QRect(20, 160, 261, 4))
+        self.frame_10.setStyleSheet("QFrame {\n"
+"    border: none;       /* Color y grosor del borde */\n"
+"    background-color: #37373d;    /* Color de fondo */\n"
+"}\n"
+"\n"
+"")
+        self.frame_10.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_10.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_10.setObjectName("frame_10")
+        self.frame_11 = QtWidgets.QFrame(self.frame_white)
+        self.frame_11.setGeometry(QtCore.QRect(20, 310, 261, 4))
+        self.frame_11.setStyleSheet("QFrame {\n"
+"    border: none;       /* Color y grosor del borde */\n"
+"    background-color: #37373d;    /* Color de fondo */\n"
+"}\n"
+"\n"
+"")
+        self.frame_11.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_11.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_11.setObjectName("frame_11")
+        self.municipio = QtWidgets.QLabel(self.frame_white)
+        self.municipio.setGeometry(QtCore.QRect(40, 340, 71, 81))
+        self.municipio.setText("")
+        self.municipio.setPixmap(QtGui.QPixmap("screens\\../assets/Municipio.png"))
+        self.municipio.setScaledContents(True)
+        self.municipio.setObjectName("municipio")
+        self.frame_12 = QtWidgets.QFrame(self.frame_white)
+        self.frame_12.setGeometry(QtCore.QRect(20, 440, 261, 4))
+        self.frame_12.setStyleSheet("QFrame {\n"
+"    border: none;       /* Color y grosor del borde */\n"
+"    background-color: #37373d;    /* Color de fondo */\n"
+"}\n"
+"\n"
+"")
+        self.frame_12.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_12.setObjectName("frame_12")
+        self.MunicipioText = QtWidgets.QTextBrowser(self.frame_white)
+        self.MunicipioText.setGeometry(QtCore.QRect(130, 360, 161, 51))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.MunicipioText.sizePolicy().hasHeightForWidth())
+        self.MunicipioText.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Montserrat")
+        self.MunicipioText.setFont(font)
+        self.MunicipioText.setToolTipDuration(-1)
+        self.MunicipioText.setAutoFillBackground(False)
+        self.MunicipioText.setStyleSheet("QTextBrowser {\n"
+"    background: transparent;  /* Quitar el fondo */\n"
+"    color:#37373d;\n"
+"    border: none;             /* Quitar el borde */\n"
+"    margin: 0;                /* Eliminar márgenes */\n"
+"}")
+        self.MunicipioText.setObjectName("MunicipioText")
+        self.AntenaText = QtWidgets.QTextBrowser(self.frame_white)
+        self.AntenaText.setGeometry(QtCore.QRect(130, 490, 161, 51))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.AntenaText.sizePolicy().hasHeightForWidth())
+        self.AntenaText.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Montserrat")
+        self.AntenaText.setFont(font)
+        self.AntenaText.setToolTipDuration(-1)
+        self.AntenaText.setAutoFillBackground(False)
+        self.AntenaText.setStyleSheet("QTextBrowser {\n"
+"    background: transparent;  /* Quitar el fondo */\n"
+"    color:#37373d;\n"
+"    border: none;             /* Quitar el borde */\n"
+"    margin: 0;                /* Eliminar márgenes */\n"
+"}")
+        self.AntenaText.setObjectName("AntenaText")
+        self.antena = QtWidgets.QLabel(self.frame_white)
+        self.antena.setGeometry(QtCore.QRect(30, 470, 81, 81))
+        self.antena.setText("")
+        self.antena.setPixmap(QtGui.QPixmap("screens\\../assets/Antena.png"))
+        self.antena.setScaledContents(True)
+        self.antena.setObjectName("antena")
+        self.frame_13 = QtWidgets.QFrame(self.frame_white)
+        self.frame_13.setGeometry(QtCore.QRect(20, 580, 261, 4))
+        self.frame_13.setStyleSheet("QFrame {\n"
+"    border: none;       /* Color y grosor del borde */\n"
+"    background-color: #37373d;    /* Color de fondo */\n"
+"}\n"
+"\n"
+"")
+        self.frame_13.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_13.setObjectName("frame_13")
+        self.globalimg = QtWidgets.QLabel(self.frame_white)
+        self.globalimg.setGeometry(QtCore.QRect(30, 620, 81, 81))
+        self.globalimg.setText("")
+        self.globalimg.setPixmap(QtGui.QPixmap("screens\\../assets/Global.png"))
+        self.globalimg.setScaledContents(True)
+        self.globalimg.setObjectName("globalimg")
+        self.globaltext = QtWidgets.QTextBrowser(self.frame_white)
+        self.globaltext.setGeometry(QtCore.QRect(130, 640, 161, 51))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.globaltext.sizePolicy().hasHeightForWidth())
+        self.globaltext.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Montserrat")
+        self.globaltext.setFont(font)
+        self.globaltext.setToolTipDuration(-1)
+        self.globaltext.setAutoFillBackground(False)
+        self.globaltext.setStyleSheet("QTextBrowser {\n"
+"    background: transparent;  /* Quitar el fondo */\n"
+"    color:#37373d;\n"
+"    border: none;             /* Quitar el borde */\n"
+"    margin: 0;                /* Eliminar márgenes */\n"
+"}")
+        self.globaltext.setObjectName("globaltext")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(30, 0, 261, 191))
         self.label.setText("")
@@ -980,76 +831,48 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.EfectivoOption.setText(_translate("Form", "Efectivo"))
-        self.DeptTransfOption.setText(_translate("Form", "Dep./Transf."))
-        self.GuardarButton.setText(_translate("Form", "AÑADIR"))
-        self.AbonarButton.setText(_translate("Form", "ABONAR"))
-        self.MetodoPago.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">METODO DE PAGO:</span></p></body></html>"))
         self.InfoPago.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">INFORMACION DEL PAGO:</span></p></body></html>"))
-        self.NumCuenta.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">HISTORIAL DE LA ANTENA:</span></p></body></html>"))
+        self.MontoText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt;\">Núm. de Cuenta</span></p></body></html>"))
-        self.Folio.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Folio</span></p></body></html>"))
-        self.MontoText_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Monto</span></p></body></html>"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Total</span></p></body></html>"))
         self.Adeudo.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.MontoText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Monto</span></p></body></html>"))
-        self.Adeudo_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.IpText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">IP:</span></p></body></html>"))
-        self.TELText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">TEL:</span></p></body></html>"))
-        self.TelHolder.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.IPHolder.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Montserrat\'; font-size:5pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.Clientes.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.GuardarButton.setText(_translate("Form", "DESCARGAR"))
+        self.Filtro.setCurrentText(_translate("Form", "Antena"))
+        self.ClienteText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">Clientes</span></p></body></html>"))
-        self.lineEdit.setPlaceholderText(_translate("Form", "Buscar"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">Cliente</span></p></body></html>"))
+        self.ComunidadText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">Comunidad</span></p></body></html>"))
+        self.MunicipioText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">Municipio</span></p></body></html>"))
+        self.AntenaText.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">Antena</span></p></body></html>"))
+        self.globaltext.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Montserrat\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:20pt; font-weight:600;\">Global</span></p></body></html>"))
         self.menuOption1.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
