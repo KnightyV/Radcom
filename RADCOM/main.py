@@ -4,6 +4,27 @@ from screens.inicio_sesion import PantallaInicioSesion
 from screens.pantalla_principal_admin import PantallaPrincipalAdmin
 from screens.pantalla_principal_facturador import PantallaPrincipalFacturador
 from screens.pantalla_principal_cobrador import PantallaPrincipalCobrador
+from screens.pantalla_cobro_admin import PantallaCobroAdmin
+from screens.pantalla_cobro_facturador import PantallaCobroFacturador
+from screens.pantalla_cobro_cobrador import PantallaCobroCobrador
+from screens.pantalla_adeudo_admin import PantallaAdeudoAdmin
+from screens.pantalla_adeudo_facturador import PantallaAdeudoFacturador
+from screens.pantalla_adeudo_cobrador import PantallaAdeudoCobrador
+from screens.pantalla_factura_pendiente_admin import PantallaFacturaPendienteAdmin
+from screens.pantalla_factura_nueva_admin import PantallaFacturaNuevaAdmin
+from screens.pantalla_factura_facturador import PantallaFacturaFacturador
+from screens.pantalla_historial_cliente import PantallaHistorialCliente
+from screens.pantalla_historial_comunidad import PantallaHistorialComunidad
+from screens.pantalla_historial_municipio import PantallaHistorialMunicipio
+from screens.pantalla_historial_antena import PantallaHistorialAntena
+from screens.pantalla_historial_global import PantallaHistorialGlobal
+from screens.pantalla_modificar import PantallaModificar
+from screens.pantalla_crearS_cliente import PantallaCrearSCliente
+from screens.pantalla_crearS_comunidad import PantallaCrearSComunidad
+from screens.pantalla_crearS_municipio import PantallaCrearSMunicipio
+from screens.pantalla_crearS_antena import PantallaCrearSAntena
+
+
 from screens.base_screen import BaseScreen  # Asegúrate de que BaseScreen esté importado
 
 class MainWindow(BaseScreen):  # Hereda de BaseScreen para utilizar la barra personalizada
@@ -15,16 +36,56 @@ class MainWindow(BaseScreen):  # Hereda de BaseScreen para utilizar la barra per
         self.stacked_widget = QStackedWidget()
 
         # Crear las pantallas
-        #self.pantalla_inicio = PantallaInicioSesion(self)
-        #self.pantalla_principal_admin = PantallaPrincipalAdmin(self)
-        #self.pantalla_principal_facturador = PantallaPrincipalFacturador(self)
+        self.pantalla_inicio = PantallaInicioSesion(self)
+        self.pantalla_principal_admin = PantallaPrincipalAdmin(self)
+        self.pantalla_principal_facturador = PantallaPrincipalFacturador(self)
         self.pantalla_principal_cobrador = PantallaPrincipalCobrador(self)
+        self.pantalla_cobro_admin = PantallaCobroAdmin(self)
+        self.pantalla_cobro_facturador = PantallaCobroFacturador(self)
+        self.pantalla_cobro_cobrador =  PantallaCobroCobrador(self)
+        self.pantalla_adeudo_admin = PantallaAdeudoAdmin(self)
+        self.pantalla_adeudo_facturador = PantallaAdeudoFacturador(self)
+        self.pantalla_adeudo_cobrador = PantallaAdeudoCobrador(self)
+        self.pantalla_factura_pendiente_admin = PantallaFacturaPendienteAdmin(self)
+        self.pantalla_factura_nueva_admin = PantallaFacturaNuevaAdmin(self)
+        self.pantalla_factura_facturador = PantallaFacturaFacturador(self)
+        self.pantalla_hitorial_cliente = PantallaHistorialCliente(self)
+        self.pantalla_historial_comunidad = PantallaHistorialComunidad(self)
+        self.pantalla_historial_municipio = PantallaHistorialMunicipio(self)
+        self.pantalla_historial_antena = PantallaHistorialAntena(self)
+        self.pantalla_historial_global = PantallaHistorialGlobal(self)
+        self.pantalla_modificar = PantallaModificar(self)
+        self.pantalla_crearS_cliente = PantallaCrearSCliente(self)
+        self.pantalla_crearS_comunidad = PantallaCrearSComunidad(self)
+        self.pantalla_crearS_municipio = PantallaCrearSMunicipio(self)
+        self.pantalla_crearS_antena = PantallaCrearSAntena(self)
+
 
         # Añadir las pantallas al QStackedWidget
-        #self.stacked_widget.addWidget(self.pantalla_inicio)
-        #self.stacked_widget.addWidget(self.pantalla_principal_admin)
-        #self.stacked_widget.addWidget(self.pantalla_principal_facturador)
+        self.stacked_widget.addWidget(self.pantalla_inicio)
+        self.stacked_widget.addWidget(self.pantalla_principal_admin)
+        self.stacked_widget.addWidget(self.pantalla_principal_facturador)
         self.stacked_widget.addWidget(self.pantalla_principal_cobrador)
+        self.stacked_widget.addWidget(self.pantalla_cobro_admin)
+        self.stacked_widget.addWidget(self.pantalla_cobro_facturador)
+        self.stacked_widget.addWidget(self.pantalla_cobro_cobrador)
+        self.stacked_widget.addWidget(self.pantalla_adeudo_admin)
+        self.stacked_widget.addWidget(self.pantalla_adeudo_facturador)
+        self.stacked_widget.addWidget(self.pantalla_adeudo_cobrador)
+        self.stacked_widget.addWidget(self.pantalla_factura_pendiente_admin)
+        self.stacked_widget.addWidget(self.pantalla_factura_nueva_admin)
+        self.stacked_widget.addWidget(self.pantalla_factura_facturador)
+        self.stacked_widget.addWidget(self.pantalla_hitorial_cliente)
+        self.stacked_widget.addWidget(self.pantalla_historial_comunidad)
+        self.stacked_widget.addWidget(self.pantalla_historial_municipio)
+        self.stacked_widget.addWidget(self.pantalla_historial_antena)
+        self.stacked_widget.addWidget(self.pantalla_historial_global)
+        self.stacked_widget.addWidget(self.pantalla_modificar)
+        self.stacked_widget.addWidget(self.pantalla_crearS_cliente)
+        self.stacked_widget.addWidget(self.pantalla_crearS_comunidad)
+        self.stacked_widget.addWidget(self.pantalla_crearS_municipio)
+        self.stacked_widget.addWidget(self.pantalla_crearS_antena)
+
 
         # Añadir el QStackedWidget al layout de contenido en BaseScreen
         self.layout().insertWidget(1, self.stacked_widget)
