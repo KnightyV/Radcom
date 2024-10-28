@@ -1,5 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QStackedWidget
+from PyQt5.QtWidgets import QApplication, QStackedWidget, QWidget, QVBoxLayout
+
 from screens.inicio_sesion import PantallaInicioSesion
 from screens.pantalla_principal_admin import PantallaPrincipalAdmin
 from screens.pantalla_principal_facturador import PantallaPrincipalFacturador
@@ -24,12 +25,9 @@ from screens.pantalla_crearS_comunidad import PantallaCrearSComunidad
 from screens.pantalla_crearS_municipio import PantallaCrearSMunicipio
 from screens.pantalla_crearS_antena import PantallaCrearSAntena
 
-
-from screens.base_screen import BaseScreen  # Asegúrate de que BaseScreen esté importado
-
-class MainWindow(BaseScreen):  # Hereda de BaseScreen para utilizar la barra personalizada
+class MainWindow(QWidget):  # Cambia BaseScreen a QWidget
     def __init__(self):
-        super().__init__(title="RADCOM")  # Pasamos el título a BaseScreen
+        super().__init__()  # Quita el título de la llamada
         self.setGeometry(100, 100, 1320, 800)  # Tamaño de la ventana principal
 
         # Crear QStackedWidget para manejar las pantallas
@@ -42,7 +40,7 @@ class MainWindow(BaseScreen):  # Hereda de BaseScreen para utilizar la barra per
         self.pantalla_principal_cobrador = PantallaPrincipalCobrador(self)
         self.pantalla_cobro_admin = PantallaCobroAdmin(self)
         self.pantalla_cobro_facturador = PantallaCobroFacturador(self)
-        self.pantalla_cobro_cobrador =  PantallaCobroCobrador(self)
+        self.pantalla_cobro_cobrador = PantallaCobroCobrador(self)
         self.pantalla_adeudo_admin = PantallaAdeudoAdmin(self)
         self.pantalla_adeudo_facturador = PantallaAdeudoFacturador(self)
         self.pantalla_adeudo_cobrador = PantallaAdeudoCobrador(self)
@@ -59,7 +57,6 @@ class MainWindow(BaseScreen):  # Hereda de BaseScreen para utilizar la barra per
         self.pantalla_crearS_comunidad = PantallaCrearSComunidad(self)
         self.pantalla_crearS_municipio = PantallaCrearSMunicipio(self)
         self.pantalla_crearS_antena = PantallaCrearSAntena(self)
-
 
         # Añadir las pantallas al QStackedWidget
         self.stacked_widget.addWidget(self.pantalla_inicio)
@@ -86,15 +83,17 @@ class MainWindow(BaseScreen):  # Hereda de BaseScreen para utilizar la barra per
         self.stacked_widget.addWidget(self.pantalla_crearS_municipio)
         self.stacked_widget.addWidget(self.pantalla_crearS_antena)
 
-
-        # Añadir el QStackedWidget al layout de contenido en BaseScreen
-        self.layout().insertWidget(1, self.stacked_widget)
+        # Añadir el QStackedWidget al layout principal
+        main_layout = QVBoxLayout(self)
+        main_layout.addWidget(self.stacked_widget)
 
         # Establecer la pantalla de inicio
         self.stacked_widget.setCurrentIndex(0)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setStyleSheet("QWidget { background-color: #37373d; }")  # Cambia el color a tu preferencia
+
     main_window = MainWindow()
     main_window.show()  # Esto es crucial para que la ventana se muestre
     sys.exit(app.exec_())
