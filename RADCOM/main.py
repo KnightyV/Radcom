@@ -2,6 +2,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QStackedWidget, QWidget, QVBoxLayout
 
 from screens.inicio_sesion import PantallaInicioSesion
+from screens.pantalla_inicio import PantallaInicio
 from screens.pantalla_principal_admin import PantallaPrincipalAdmin
 from screens.pantalla_principal_facturador import PantallaPrincipalFacturador
 from screens.pantalla_principal_cobrador import PantallaPrincipalCobrador
@@ -34,7 +35,8 @@ class MainWindow(QWidget):  # Cambia BaseScreen a QWidget
         self.stacked_widget = QStackedWidget()
 
         # Crear las pantallas
-        self.pantalla_inicio = PantallaInicioSesion(self)
+        #self.pantalla_inicio = PantallaInicioSesion(self)
+        self.pantalla_inicio = PantallaInicio(self)
         self.pantalla_principal_admin = PantallaPrincipalAdmin(self)
         self.pantalla_principal_facturador = PantallaPrincipalFacturador(self)
         self.pantalla_principal_cobrador = PantallaPrincipalCobrador(self)
@@ -59,6 +61,7 @@ class MainWindow(QWidget):  # Cambia BaseScreen a QWidget
         self.pantalla_crearS_antena = PantallaCrearSAntena(self)
 
         # Añadir las pantallas al QStackedWidget
+        #self.stacked_widget.addWidget(self.pantalla_inicio)
         self.stacked_widget.addWidget(self.pantalla_inicio)
         self.stacked_widget.addWidget(self.pantalla_principal_admin)
         self.stacked_widget.addWidget(self.pantalla_principal_facturador)
