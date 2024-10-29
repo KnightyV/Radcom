@@ -11,6 +11,7 @@ class BaseScreen(QWidget):
         # Configuración de la pantalla
         self.setGeometry(100, 100, 800, 600)
         self.setMinimumSize(1275, 725)
+
         self.setStyleSheet("background-color: #53535e;")  # Fondo sin bordes redondeados
 
         # Crear layout principal

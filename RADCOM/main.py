@@ -86,6 +86,8 @@ class MainWindow(QWidget):  # Cambia BaseScreen a QWidget
         self.stacked_widget.addWidget(self.pantalla_crearS_municipio)
         self.stacked_widget.addWidget(self.pantalla_crearS_antena)
 
+
+
         # Añadir el QStackedWidget al layout principal
         main_layout = QVBoxLayout(self)
         main_layout.addWidget(self.stacked_widget)
@@ -98,5 +100,10 @@ if __name__ == "__main__":
     app.setStyleSheet("QWidget { background-color: #37373d; }")  # Cambia el color a tu preferencia
 
     main_window = MainWindow()
+
+    # Set fixed size to prevent maximizing beyond 1275x725
+    main_window.setMinimumSize(1275, 725)
+    main_window.setMaximumSize(1275, 725)
+
     main_window.show()  # Esto es crucial para que la ventana se muestre
     sys.exit(app.exec_())
